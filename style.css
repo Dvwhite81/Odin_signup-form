@@ -1,0 +1,189 @@
+@font-face {
+  font-family: "Norse Bold";
+  src: url("./resources/Norse-Bold.otf");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  width: 100vw;
+}
+
+.container {
+  display: inline-flex;
+  height: 100%;
+  width: 100%;
+}
+
+.sidebar {
+  background-image: url("./resources/halie-west-25xggax4bSA-unsplash.jpg");
+  background-size: cover;
+  position: relative;
+  width: 37%;
+}
+
+.main {
+  width: 63%;
+}
+
+.logo-div {
+    position: relative;
+    height: 6rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 7.2rem;
+
+
+    &::before {
+        content: "";
+        background-color: black;
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.5;
+    }
+}
+
+#odin-logo {
+  height: 80%;
+  position: relative;
+}
+
+#odin-text {
+  color: white;
+  font-family: "Norse Bold";
+  font-size: 5rem;
+  position: relative;
+}
+
+#credit {
+    bottom: 0;
+    color: white;
+    left: 20%;
+    position: absolute;
+}
+
+#credit a {
+    color: white;
+}
+
+p,
+button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.top {
+    background-color: #f9fafb;
+    height: 33%;
+}
+
+.top p {
+    padding: 4rem 1rem 0 3rem;
+    width: 75%;
+}
+
+.middle {
+    height: 29%;
+    padding: 1rem 0 0 3rem;
+}
+
+.middle p {
+    margin: 0;
+}
+
+.middle .row {
+    height: 20%;
+}
+
+.middle .row:first-child {
+    height: 15%;
+}
+
+form {
+    width: 67%;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-col {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+    width: 40%;
+}
+
+label {
+    font-size: smaller;
+}
+
+input {
+    border-color: #E5E7EB;
+    border-radius: 3px;
+}
+
+input:focus {
+    border-color: blue;
+    box-shadow: 1px 1px 3px gray;
+}
+
+.error {
+    border-color: red;
+}
+
+#error-message {
+    color: red;
+    font-size: smaller;
+    font-weight: normal;
+    padding-top: 2px;
+}
+
+.bottom {
+    background-color: #f9fafb;
+    box-shadow: 0 0 4px gray;
+    height: 38%;
+    padding: 2rem 3rem;
+}
+
+button {
+    background-color: #596d48;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 5px;
+}
+
+.bottom a {
+    color: #596d48;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+    .top p {
+        padding: 1rem;
+    }
+
+    form {
+        width: 90%;
+    }
+    .form-col {
+        width: 50%;
+    }
+}
